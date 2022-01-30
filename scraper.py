@@ -29,3 +29,11 @@ airtable_base = os.getenv("AIRTABLE_BASE")
 airtable_table_name = os.getenv("TABLE_NAME")
 
 table = Table(airtable_key, airtable_base, airtable_table_name)
+
+print(table.all())
+
+# record_row_1 = table.get("tblS5GO8TX9CHEbQ5") 
+
+# incrementer_value = record_row_1["fields"]["Incrementer"] 
+
+# print(incrementer_value)
