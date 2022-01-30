@@ -27,3 +27,5 @@ from pyairtable import Table
 airtable_key = os.getenv("AIRTABLE_KEY")
 airtable_base = os.getenv("AIRTABLE_BASE")
 airtable_table_name = os.getenv("TABLE_NAME")
+
+table = Table(airtable_key, airtable_base, airtable_table_name)
