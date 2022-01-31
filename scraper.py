@@ -30,10 +30,10 @@ airtable_table_name = os.getenv("TABLE_NAME")
 
 table = Table(airtable_key, airtable_base, airtable_table_name)
 
-print(table.all())
+# print(table.all())
 
-# record_row_1 = table.get("tblS5GO8TX9CHEbQ5") 
+record_row_1 = table.get("recvTWVszIE9I6NwE") 
 
-# incrementer_value = record_row_1["fields"]["Incrementer"] 
+incrementer_value = record_row_1["fields"]["incrementer"] 
 
-# print(incrementer_value)
+print(incrementer_value)
